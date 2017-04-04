@@ -1,10 +1,20 @@
 class BankAccount(object):
+  '''
+  This is the parent class from which other class inherit
+  '''
   def withdraw(self):
+    '''
+    This method will be overriden by child class
+    '''
     pass
   def deposit(self):
     pass
   
 class SavingsAccount(BankAccount):
+  '''
+    This class Class inherits from BankAccount class
+        
+    '''
   def __init__(self):
     self.__balance=500
   @property
@@ -27,6 +37,10 @@ class SavingsAccount(BankAccount):
     return self.__balance
   
 class CurrentAccount(BankAccount):
+  '''
+    This class Class inherits from BankAccount class
+        
+    '''
   def __init__(self):
     self.__balance=0
   @property
